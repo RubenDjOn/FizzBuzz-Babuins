@@ -72,9 +72,17 @@ describe("FizzBuzz", function() {
 	it('When number has the digit "3" return "Fizz"', function() {
 		input = 31;
 
-	    result = fizzBuzz.convert(input);
+    result = fizzBuzz.convert(input);
 
-	    expect(result).toEqual('Fizz');
+    expect(result).toEqual('Fizz');
 	});
+
+  it('When number is 52 should return Buzz', function() {
+    input = 52;
+
+    result = fizzBuzz.convert(input);
+
+    expect(result).toEqual('Buzz');
+  });
 
 });

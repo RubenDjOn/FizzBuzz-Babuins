@@ -8,7 +8,7 @@ FizzBuzz.prototype.convert = function(number) {
         word = 'FizzBuzz';
     } else if(number%5==0) {
         word = 'Buzz';
-    } else if (number%3==0) {
+    } else if (number%3==0 || (''+number).indexOf(3)!=-1) {
     	word = 'Fizz';
     }   
     
