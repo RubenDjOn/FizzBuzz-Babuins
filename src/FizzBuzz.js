@@ -4,11 +4,11 @@ function FizzBuzz() {
 FizzBuzz.prototype.convert = function(number) {  
   	var word = number;
 
-	if (number==15||number==30) {
+	if (number%3==0 && number%5==0) {
         word = 'FizzBuzz';
     } else if(number%5==0) {
         word = 'Buzz';
-    } else if (number == 3) {
+    } else if (number%3==0) {
     	word = 'Fizz';
     }   
     

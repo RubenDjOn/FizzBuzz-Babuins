@@ -55,18 +55,26 @@ describe("FizzBuzz", function() {
     });
   });
 
-  it('When number 4 it should return 4', function() {
-    result = fizzBuzz.convert(4);
+  describe('Number is not divisible by 3 or 5', function() {
+	  it('When number 4 it should return 4', function() {
+	    result = fizzBuzz.convert(4);
 
-    expect(result).toEqual(4);
+	    expect(result).toEqual(4);
+	  });
+
+	  it('When number 8 it should return 8', function() {
+	    result = fizzBuzz.convert(8);
+
+	    expect(result).toEqual(8);
+	  });
   });
 
-  it('When number 8 it should return 8', function() {
-    result = fizzBuzz.convert(8);
+	it('When number has the digit "3" return "Fizz"', function() {
+		input = 31;
 
-    expect(result).toEqual(8);
-  });
+	    result = fizzBuzz.convert(input);
 
-
+	    expect(result).toEqual('Fizz');
+	});
 
 });
