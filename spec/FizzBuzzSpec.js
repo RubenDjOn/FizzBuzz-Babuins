@@ -9,19 +9,7 @@ describe("FizzBuzz", function() {
 	  	result = fizzBuzz.convert(3);
 
 	    expect(result).toEqual('Fizz');
-	  });
-
-	  it('When number is 30 it should return FizzBuzz', function() {
-	  	result = fizzBuzz.convert(30);
-
-	    expect(result).toEqual('FizzBuzz');
-	  });
-
-	   it('When number is 15 it should return FizzBuzz', function() {    
-    	result = fizzBuzz.convert(15);
-
-    	expect(result).toEqual('FizzBuzz');
-  	});  
+	  });	    
   });
 
 
@@ -43,6 +31,26 @@ describe("FizzBuzz", function() {
 
       expect(result).toEqual('Buzz');
     });
+  });
+
+  describe('Number is divisible by 3 and 5', function() {
+    it('When number is 30 it should return FizzBuzz', function() {
+      result = fizzBuzz.convert(30);
+
+      expect(result).toEqual('FizzBuzz');
+    });
+
+     it('When number is 15 it should return FizzBuzz', function() {    
+      result = fizzBuzz.convert(15);
+
+      expect(result).toEqual('FizzBuzz');
+    });
+  });
+
+  it('When number 4 it should return 4', function() {
+    result = fizzBuzz.convert(4);
+
+    expect(result).toEqual(4);
   });
 
 });
