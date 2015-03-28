@@ -9,7 +9,15 @@ describe("FizzBuzz", function() {
 	  	result = fizzBuzz.convert(3);
 
 	    expect(result).toEqual('Fizz');
-	  });	    
+	  });
+
+    it('When number is 6 it should return Fizz', function() {
+      input = 6;
+
+      result = fizzBuzz.convert(input);
+
+      expect(result).toEqual('Fizz');
+    });    	    
   });
 
 
