@@ -8,7 +8,9 @@ FizzBuzz.prototype.convert = function(number) {
         word = 'FizzBuzz';
     } else if(number%5==0) {
         word = 'Buzz';
-    }    
+    } else if (number == 4) {
+    	word = 4;
+    }   
     
     return word;
 };
