@@ -4,13 +4,21 @@ function FizzBuzz() {
 FizzBuzz.prototype.convert = function(number) {  
   	var word = number;
 
-	if (number%3==0 && number%5==0) {
+    if (this.isDivisibleBy(number, 15)) {
         word = 'FizzBuzz';
-    } else if(number%5==0 || (''+number).indexOf(5)!=-1) {
+    } else if(this.isDivisibleBy(number, 5) || this.contains(number, 5)) {
         word = 'Buzz';
-    } else if (number%3==0 || (''+number).indexOf(3)!=-1) {
+    } else if (this.isDivisibleBy(number, 3) || this.contains(number, 3)) {
     	word = 'Fizz';
     }   
     
     return word;
 };
+
+FizzBuzz.prototype.isDivisibleBy = function(number, divisor) {  
+    return number % divisor == 0;
+}
+
+FizzBuzz.prototype.contains = function(number, needle) { 
+    return (''+number).indexOf(needle)!=-1;
+}
