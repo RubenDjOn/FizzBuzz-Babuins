@@ -5,19 +5,29 @@ describe("FizzBuzz", function() {
   });
 
   it('When number is 3 it should return Fizz', function() {
-    expect(fizzBuzz.convert(3)).toEqual('Fizz');
+  	result = fizzBuzz.convert(3);
+
+    expect(result).toEqual('Fizz');
   });
 
 
   it('When number is 5 it should return Buzz', function() {
-    expect(fizzBuzz.convert(5)).toEqual('Buzz');
+  	result = fizzBuzz.convert(5);
+
+    expect(result).toEqual('Buzz');
   });
 
-  it('When number is 10 it should return Buzz', function() {
-    
+  it('When number is 10 it should return Buzz', function() {    
     result = fizzBuzz.convert(10);
 
     expect(result).toEqual('Buzz');
   });
+
+  it('When number is 15 it should return FizzBuzz', function() {    
+    result = fizzBuzz.convert(15);
+
+    expect(result).toEqual('FizzBuzz');
+  });  
+  
 
 });
