@@ -53,4 +53,12 @@ describe("FizzBuzz", function() {
     expect(result).toEqual(4);
   });
 
+  it('When number 8 it should return 8', function() {
+    result = fizzBuzz.convert(8);
+
+    expect(result).toEqual(8);
+  });
+
+
+
 });
